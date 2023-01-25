@@ -1,0 +1,5 @@
+<div class="pagination-wrapper">
+    <button [ngStyle]="{'visibility': isFirstPage ? 'hidden' : 'visible'}" (click)="back()">< BACK</button>
+    <span class="results-header">{{totalItems}} results found</span>
+    <button [ngStyle]="{'visibility': isLastPage ? 'hidden' : 'visible'}"(click)="forward()">Forward ></button>
+</div>

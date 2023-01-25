@@ -1,5 +1,9 @@
-<section *ngIf="postDetails$ | async as post">
+<section *ngIf="(postDetails$ | async) as post; else loading">
   <button (click)="back()">back</button>
   <h1>{{ post.title }}</h1>
   <p>{{ post.body }}</p>
 </section>
+
+<ng-template #loading>
+  <div>Loading...</div>
+</ng-template>

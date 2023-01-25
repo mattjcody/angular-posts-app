@@ -15,11 +15,11 @@ export class PostPaginationComponent {
   back = () => this.backEvent.emit();
   forward = () => this.forwardEvent.emit();
 
-  get isLastPage():Boolean{
-    return this.pageNumber === this.maxPages;
+  get isLastPage():Boolean {
+    return this.pageNumber === this.maxPages || this.maxPages == 0;
   }
 
-  get isFirstPage():Boolean{ 
+  get isFirstPage():Boolean { 
     return this.pageNumber === 1;
   }
   

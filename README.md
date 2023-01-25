@@ -15,3 +15,21 @@ When clicked on a post, it should load the post details on a new page.
 Users should be able to navigate back from the post detail page via a button.
 
 Minimal default native styles will do but you can use any UI library if you need (like angular material or bootstrap etc).
+
+# Goals
+ Main goals
+ - [x] Complete brief 
+ - [x] Avoid any pacakges except with what comes with the default `ng new` 
+ 
+  Demonstrate the use of the following :-
+   - [x] Project Structure
+   - [x] Lazy loading
+   - [x] Services
+   - [ ] Custom Directive
+   - [x] RXJS
+   - [ ] CSS Variables
+   - [ ] Environment variables
+   
+
+
+

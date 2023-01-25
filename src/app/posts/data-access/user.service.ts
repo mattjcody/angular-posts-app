@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-
 export interface UserData {
   id: number;
   name: string;
@@ -16,7 +15,7 @@ export interface UserData {
     geo: {
       lat: string;
       lng: string;
-    }
+    };
   };
   phone: string;
   website: string;
@@ -24,21 +23,20 @@ export interface UserData {
     name: string;
     catchPhrase: string;
     bs: string;
-  }
+  };
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
   private apiUrl = 'https://jsonplaceholder.typicode.com/users';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  getUsers = (): Observable<UserData[]> => 
+  getUsers = (): Observable<UserData[]> =>
     this.http.get<UserData[]>(this.apiUrl);
 
-  getUser = (id: number): Observable<UserData> => 
-    this.http.get<UserData>(`${this.apiUrl}/${id}`)
-    
+  getUser = (id: number): Observable<UserData> =>
+    this.http.get<UserData>(`${this.apiUrl}/${id}`);
 }

@@ -1,9 +1,7 @@
-
-input{
-    width:100%;
-    margin-bottom:24px;
-    &:focus{
-        border-color:rgb(125, 100, 255);
-    }
+input {
+  width: 100%;
+  margin-bottom: 24px;
+  &:focus {
+    border-color: rgb(125, 100, 255);
+  }
 }
-

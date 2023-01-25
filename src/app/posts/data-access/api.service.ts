@@ -3,20 +3,20 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
   private apiUrl = 'https://jsonplaceholder.typicode.com';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  getUsers = (): Observable<UserApiData[]> => 
+  getUsers = (): Observable<UserApiData[]> =>
     this.http.get<UserApiData[]>(`${this.apiUrl}/users`);
 
-  getPosts = (): Observable<PostApiData[]> => 
+  getPosts = (): Observable<PostApiData[]> =>
     this.http.get<PostApiData[]>(`${this.apiUrl}/posts`);
 
-  getPostById = (id:number): Observable<PostApiData> => 
+  getPostById = (id: number): Observable<PostApiData> =>
     this.http.get<PostApiData>(`${this.apiUrl}/posts/${id}`);
 }
 

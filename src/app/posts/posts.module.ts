@@ -14,13 +14,8 @@ import { PostResultCardComponent } from './ui/post-result-card/post-result-card.
     PostsComponent,
     PostPaginationComponent,
     PostDetailsComponent,
-    PostResultCardComponent
+    PostResultCardComponent,
   ],
-  imports: [
-    CommonModule,
-    PostsRoutingModule,
-    FormsModule,
-    RouterModule
-  ]
+  imports: [CommonModule, PostsRoutingModule, FormsModule, RouterModule],
 })
-export class PostsModule { }
+export class PostsModule {}

@@ -7,13 +7,11 @@ import { PostsComponent } from './posts.component';
 const routes: Routes = [
   { path: 'posts', component: PostsComponent },
   { path: 'posts/:id', component: PostDetailsComponent },
-  { path: '', redirectTo: 'posts', pathMatch: 'full' }
+  { path: '', redirectTo: 'posts', pathMatch: 'full' },
 ];
 
 @NgModule({
   declarations: [],
-  imports: [
-    RouterModule.forChild(routes)
-  ]
+  imports: [RouterModule.forChild(routes)],
 })
-export class PostsRoutingModule { }
+export class PostsRoutingModule {}

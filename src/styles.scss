@@ -52,9 +52,17 @@ button {
     padding: 6px 16px;
     border: 2px solid rgb(125, 100, 255);
     color: rgb(125, 100, 255);
+    font-weight:600;
+    text-transform: uppercase;
     cursor: pointer;
     &.fill {
         background-color: rgb(125, 100, 255);
         color: white;
+    }
+    &:hover{
+        background-color:hsl(251, 0%, 92%);
+    }
+    &:active{
+        background-color:hsl(251, 70%, 88%);
     }
 }

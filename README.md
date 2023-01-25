@@ -16,21 +16,21 @@ Users should be able to navigate back from the post detail page via a button.
 
 Minimal default native styles will do but you can use any UI library if you need (like angular material or bootstrap etc).
 
-# Goals
+# Personal Goals
  Main goals
  - [x] Complete brief 
  - [x] Avoid any pacakges except with what comes with the default `ng new` 
  
   Demonstrate the use of the following :-
-   - [x] Project Structure
-   - [x] Lazy loading
-   - [x] Services
-   - [ ] Custom Directive
+   - [X] Project Structure
+   - [X] Lazy loading Routes
+   - [x] Services Abstraction
+   - [ ] Custom Directives
    - [x] RXJS
    - [ ] CSS Variables
    - [ ] Environment variables
    - [ ] URI state management
    
-
+***Note: not all goals were achieved in the time given.**
 
 
